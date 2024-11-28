@@ -45,7 +45,7 @@ function ForgotPassword() {
 
   return (
     <div className="ForgotPassword-container">
-      <img src="assets/img/vector.png" alt="StartStak Logo" className="logo" />
+      <img src="/assets/img/vector.png" alt="StartStak Logo" className="logo" />
       <div className="mainContainer-ForgotPassword">
       <div className="logo-section">
         <h1 className="title">StartStak AdVenturer</h1>

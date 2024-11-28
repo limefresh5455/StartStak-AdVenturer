@@ -51,7 +51,7 @@ function Login() {
 
   return (
     <div className="login-container">
-     <img src="assets/img/vector.png" alt="StartStak Logo" className="logo" />
+     <img src="/assets/img/vector.png" alt="StartStak Logo" className="logo" />
       <div className="mainContainer-Login">
       <div className="logo-section">
         <h1 className="title">StartStak AdVenturer</h1>
