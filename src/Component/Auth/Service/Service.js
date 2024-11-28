@@ -35,6 +35,16 @@ export const FotgotPasswordService= async(userDetails)=>{
 }
 }
 
+export const OtpVerifyService= async(userDetails)=>{
+  try{
+  const res = await axiosInstance.post(`/api/auth/OtpVerify`,userDetails)
+  return res;
+} catch (error) {
+  console.log('Error fetching OtpVerifyService:', error);
+  throw error; 
+}
+}
+
 
 
 export const ResetPasswordService= async(userDetails)=>{

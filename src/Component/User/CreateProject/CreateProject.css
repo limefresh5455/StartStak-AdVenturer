@@ -1,0 +1,107 @@
+/* Make the container full height and center everything */
+.CreateProject-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 0 20px; /* Prevent overflow on small screens */
+}
+
+/* Header styling - position the logo at the top-left */
+.header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.logo {
+    max-width: 1360px;
+    width: 150px;
+    height: 37px;
+}
+
+/* Centered content styling */
+.content {
+    text-align: center;
+}
+
+h1 {
+    font-size: 31px;
+    line-height: 31px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+}
+
+p {
+    font-size: 16px;
+    line-height: 20.8px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Styling for the Create New Project button */
+.btn {
+    height: 40px;
+    width: 200px;
+    background-color: #8a2be2; /* Bright purple */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 21px;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    transition: background-color 0.3s;
+    margin-top: 90px; /* Distance from the text */
+    margin-bottom: 100px;
+}
+
+/* Button hover effect */
+.btn:hover {
+    background-color: #4d068b;
+    color: white;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem; /* Slightly smaller font size */
+    }
+
+    p {
+        font-size: 1rem; /* Smaller paragraph text */
+    }
+
+    .btn {
+        width: 160px; /* Make button a bit smaller on mobile */
+        font-size: 0.9rem;
+        padding: 5px;
+    }
+
+    .logo {
+        width: 120px; /* Adjust logo size */
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .content {
+        margin-top: 80px; /* Adjust content positioning on very small screens */
+    }
+
+    .btn {
+        width: 140px; /* Even smaller button on very small screens */
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .CreateProject-container {
+        padding: 0 10px; /* Reduce padding on very small screens */
+    }
+}

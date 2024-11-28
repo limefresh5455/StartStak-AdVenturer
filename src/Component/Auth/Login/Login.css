@@ -31,12 +31,14 @@
   .title {
     font-size: 24px;
     font-weight: 600;
+    font-family: 'Inter', sans-serif;
     margin-bottom: 8px;
     line-height: 1.3;
   }
   
   .tagline {
     font-size: 16px;
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     color: #aaa;
     line-height: 1.4;
@@ -46,7 +48,7 @@
   .form-box {
     max-width: 500px;
     width: 100%;
-    padding: 30px 40px;
+    padding: 20px 40px;
     background-color: #190434; /* Slightly lighter for contrast */
     border-radius: 10px;
     border: 1px solid #8273d4;
@@ -56,6 +58,7 @@
   .form-box h2 {
     font-size: 1.5rem;
     margin-bottom: 20px;
+    font-family: "Barlow Condensed", serif;
     font-weight: 600;
     color: #ffffff;
   }
@@ -69,6 +72,7 @@
   .input-group label {
     display: block;
     font-size: 14px;
+    font-family: 'Inter', sans-serif;
     font-weight: 500;
     margin-bottom: 8px;
     color: #ffffff;
@@ -84,6 +88,8 @@
     color: #fff;
     font-size: 14px;
     outline: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
     transition: border-color 0.3s;
   }
   
@@ -119,8 +125,9 @@
     text-align: left;
     font-size: 14px;
     color: #ffffff;
+    font-family: 'Inter', sans-serif;
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     line-height: 1.5;
   }
   
@@ -130,7 +137,7 @@
   }
   
   /* Button */
-  .login-button {
+  .login-button-submit {
     width: 100%;
     height: 40px;
     background-color: #6300cf;
@@ -138,6 +145,7 @@
     border-radius: 8px;
     color: white;
     font-size: 14px;
+    font-family: 'Inter', sans-serif;
     font-weight: 600;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -146,11 +154,37 @@
   .login-button:hover {
     background-color: #8e5be4; /* Softer hover effect */
   }
+
+  p.create-account {
+    margin-top: 15px;
+    margin-bottom: 0px !important;
+    font-size: 14px;
+    color: #ffffff;
+  }
+  
+  .create-account-link {
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+  
+  .create-account-link:hover {
+    text-decoration: none;
+    color: #6300cf;
+  }
+  
   
   /* Responsive design */
   @media (max-width: 768px) {
     .form-box {
       padding: 20px;
+    }
+    
+    .logo {
+      width: 127px;
+      height: 32px;
+      margin-bottom: 30px; /* Reduced for cleaner spacing */
+      object-fit: contain;
     }
   
     .input-group input {

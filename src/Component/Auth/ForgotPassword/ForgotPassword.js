@@ -45,7 +45,7 @@ function ForgotPassword() {
 
   return (
     <div className="ForgotPassword-container">
-      <img src="vector.png" alt="StartStak Logo" className="logo" />
+      <img src="assets/img/vector.png" alt="StartStak Logo" className="logo" />
       <div className="mainContainer-ForgotPassword">
       <div className="logo-section">
         <h1 className="title">StartStak AdVenturer</h1>
@@ -57,21 +57,29 @@ function ForgotPassword() {
         <h2>Forgot Password</h2>
         <form onSubmit={handleSubmit}>
           <div className="input-group">
-            <label>Email Address</label>
+            <label htmlFor="email">Email Address</label>
             <input
               type="email"
               placeholder="Enter your email address"
+              id="email"
               name="email"
               value={formData.email}
               onChange={handleInputChange}
               className={errors.email ? "error-input" : ""}
+              autoComplete="email"
             />
           </div>
           {errors.email && <p className="error">{errors.email}</p>}
-          <button type="submit" className="login-button">
+          <button type="submit" className="forgot-password-button">
             Forgot Password
           </button>
         </form>
+        <p className="back-to-login">
+         Back To Login?{" "}
+        <Link to="/" className="back-to-login-link">
+          Log In
+        </Link>
+       </p>
       </div>
       </div>
     </div>

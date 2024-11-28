@@ -51,8 +51,8 @@ function Login() {
 
   return (
     <div className="login-container">
-     <img src="vector.png" alt="StartStak Logo" className="logo" />
-    <div className="mainContainer-Login">
+     <img src="assets/img/vector.png" alt="StartStak Logo" className="logo" />
+      <div className="mainContainer-Login">
       <div className="logo-section">
         <h1 className="title">StartStak AdVenturer</h1>
         <p className="tagline">
@@ -63,33 +63,37 @@ function Login() {
         <h2>Log In</h2>
         <form onSubmit={handleSubmit}>
           <div className="input-group">
-            <label>Email Address</label>
+            <label htmlFor="email">Email Address</label>
             <input
               type="email"
               placeholder="Enter your email address"
+              id="email"
               name="email"
               value={formData.email}
               onChange={handleInputChange}
               className={errors.email ? "error-input" : ""}
+              autoComplete="email"
             />
           </div>
           {errors.email && <p className="error">{errors.email}</p>}
           <div className="input-group">
-            <label>Password</label>
+            <label htmlFor="password">Password</label>
             <input
               type="password"
               placeholder="Enter password"
+              id="password"
               name="password"
               value={formData.password}
               onChange={handleInputChange}
               className={errors.password ? "error-input" : ""}
+              autoComplete="new-password"
             />
           </div>
           {errors.password && <p className="error">{errors.password}</p>}
           <Link to="/forgotPassword" className="forgot-password">
             Forgot password?
           </Link>
-          <button type="submit" className="login-button">
+          <button type="submit" className="login-button-submit">
             Log In
           </button>
         </form>

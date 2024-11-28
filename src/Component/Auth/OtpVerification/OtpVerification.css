@@ -1,0 +1,140 @@
+.otp-verification-container-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .otp-verification-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    background-color:  #190434;
+    border: 1px solid #8273d4;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+   
+  
+  .otp-verification-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-weight: 600;
+    font-family: "Barlow Condensed", serif;
+  }
+  
+  .otp-verification-container p {
+    font-size: 14px;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+
+  .email-input{
+    font-size: 14px;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .otp-input {
+    width: 50px;
+    height: 50px;
+    margin: 0 5px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+  }
+  
+  .reset-otp {
+    font-size: 14px;
+    color: #555; /* Base text color */
+    text-align: center;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .reset-otp:hover {
+    color: #34016b; /* Change color on hover */
+     /* Add underline on hover */
+  }
+  
+  .reset-otp span {
+    color: #6300cf; /* Highlighted color for 'Reset OTP' */
+    font-weight: 900;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .reset-otp span:hover {
+    color: #34016b; /* Slightly darker color for hover effect */
+    text-decoration: underline;
+  }
+  
+  
+  .submit-btn {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #6300cf;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+ 
+  
+  .submit-btn:hover {
+    background: #9556d8;
+  }
+
+  /* Responsive Design */
+@media screen and (max-width: 480px) {
+    .otp-input {
+      width: 40px;
+      height: 40px;
+      font-size: 16px;
+      margin: 0 3px;
+    }
+  
+    .otp-verification-container h2 {
+      font-size: 20px;
+    }
+  
+    .submit-btn {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .otp-verification-container {
+      padding: 15px;
+    }
+  
+    .otp-input {
+      width: 45px;
+      height: 45px;
+      font-size: 16px;
+    }
+}
+  

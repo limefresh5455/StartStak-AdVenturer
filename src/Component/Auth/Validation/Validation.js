@@ -3,7 +3,7 @@
 export const signUpValidation = (userDetails) => {
     let errors = {};
   
-    const { name, email , password, number } = userDetails;
+    const { name, email , password} = userDetails;
   
  
     if (!name) { 
@@ -18,11 +18,11 @@ export const signUpValidation = (userDetails) => {
     }
   
     // Validate number field
-    if (!number) {
-        errors.number = '*Mobile number is required.';
-      }else if (!/^\d{10}$/.test(userDetails.number)) {
-        errors.number = '*Mobile number is invalid. Please enter a 10-digit number.';
-      }
+    // if (!number) {
+    //     errors.number = '*Mobile number is required.';
+    //   }else if (!/^\d{10}$/.test(userDetails.number)) {
+    //     errors.number = '*Mobile number is invalid. Please enter a 10-digit number.';
+    //   }
   
     // Validate password field 
     if (!password) { 

@@ -5,24 +5,29 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(135deg, #8b3ca5, #0d39c8); /* Beautiful gradient */
+    /* background: linear-gradient(135deg,#0d39c8, #190434);  */
+    background-color:  #190434;
     text-align: center;
     font-family: 'Arial', sans-serif;
   }
   
   .notfound-content {
     color: #fff;
+    font-family: 'Inter', sans-serif;
   }
   
   .notfound-title {
     font-size: 120px;
     font-weight: bold;
+    font-family: 'Inter', sans-serif;
     animation: bounce 2s infinite; /* Apply bounce animation */
   }
   
   .notfound-message {
     font-size: 24px;
     margin: 20px 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
   }
   
   .notfound-button {
@@ -32,12 +37,16 @@
     color: #000000;
     background-color: #fff;
     border-radius: 5px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
     transition: background-color 0.3s ease;
   }
   
   .notfound-button:hover {
     background: linear-gradient(135deg, #8b3ca5, #0d39c8);
     color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
   }
   
 
