@@ -6,7 +6,7 @@ const CreateProject = () => {
     <div className="CreateProject-container">
       {/* Header with Logo */}
       <header className="header">
-        <img src="/assets/img/vector.png" alt="StartStak Logo" className="logo" />
+        <img src="/assets/img/Vector.png" alt="StartStak Logo" className="logo" />
       </header>
 
       {/* Centered Content */}

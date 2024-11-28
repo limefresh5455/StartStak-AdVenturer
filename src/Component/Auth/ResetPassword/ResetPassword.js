@@ -47,7 +47,7 @@ function ResetPassword() {
 
   return (
     <div className="Reset-container">
-      <img src="/assets/img/vector.png" alt="StartStak Logo" className="logo" />
+      <img src="/assets/img/Vector.png" alt="StartStak Logo" className="logo" />
       <div className="mainContainer-Reset">
       <div className="logo-section">
         <h1 className="title">StartStak AdVenturer</h1>
